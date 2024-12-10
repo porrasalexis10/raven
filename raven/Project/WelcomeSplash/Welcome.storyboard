@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome SplashVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="WelcomeSplashVC" customModule="raven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenidos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXL-cg-Q7L">
+                                <rect key="frame" x="20" y="184.66666666666666" width="353" height="35"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="25"/>
+                                <color key="textColor" name="principalText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vj-l7-f1y" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="20" y="249.66666666666663" width="353" height="353"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Vj-l7-f1y" secondAttribute="height" multiplier="1:1" id="rsj-r0-wfb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39O-Tj-rZX">
+                                <rect key="frame" x="20" y="772" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="39O-Tj-rZX" firstAttribute="trailing" secondItem="gXL-cg-Q7L" secondAttribute="trailing" id="55H-5J-R0D"/>
+                            <constraint firstItem="5Vj-l7-f1y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="5fP-fB-jKi"/>
+                            <constraint firstItem="39O-Tj-rZX" firstAttribute="leading" secondItem="gXL-cg-Q7L" secondAttribute="leading" id="7E6-JL-Pso"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5Vj-l7-f1y" secondAttribute="trailing" constant="20" id="bDa-cA-Sm1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gXL-cg-Q7L" secondAttribute="trailing" constant="20" id="fqn-2r-3Al"/>
+                            <constraint firstItem="gXL-cg-Q7L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="i5r-6K-MwR"/>
+                            <constraint firstItem="5Vj-l7-f1y" firstAttribute="top" secondItem="gXL-cg-Q7L" secondAttribute="bottom" constant="30" id="ocp-u2-0iF"/>
+                            <constraint firstItem="5Vj-l7-f1y" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="sQG-tn-gr1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="39O-Tj-rZX" secondAttribute="bottom" constant="25" id="uPW-6f-JQH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="versionLbl" destination="39O-Tj-rZX" id="4Ma-B8-Tb8"/>
+                        <outlet property="welcomeLbl" destination="gXL-cg-Q7L" id="FNg-oK-3FV"/>
+                        <outlet property="welcomeView" destination="5Vj-l7-f1y" id="Exu-UY-1ED"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="5Vj-l7-f1y"/>
+    </designables>
+    <resources>
+        <namedColor name="principalText">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

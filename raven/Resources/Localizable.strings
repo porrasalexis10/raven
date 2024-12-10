@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  raven
+  Created by ALEXIS ANTONIO PORRAS LOBATO on 10/12/24.
+*/
+// MARK: BaseViewController
+"BaseViewController.defaultError" = "Algo salió mal, inténtelo de nuevo más tarde";
+// MARK: APIManager
+"APIManager.defaultError" = "Error al conectar con el servidor";
+// MARK: WelcomeSplashVC
+"WelcomeSplashVC.welcome" = "Bienvenid@s";
+"WelcomeSplashVC.version" = "%@ ( %@ )";
+// MARK: LoginVC
+"LoginVC.user" = "Usuario";
+"LoginVC.password" = "Contraseña";
+"LoginVC.missingUser" = "Favor de escribir un usuario";
+"LoginVC.missingPassword" = "Favor de escribir una contraseña";
+"LoginVC.wrongPassword" = "Error en login biométrico";
+// MARK: NewsVC
+"NewsVC.title" = "Noticias";
+"NewsVC.notFoundNews" = "Noticia no encontrada";
+// MARK: NewsDetailVC
+"NewsDetailVC.goNews" = "Noticia completa";
+// MARK: ProfileVC
+"ProfileVC.name" = "Nombre";
+"ProfileVC.position" = "Ocupación";
+"ProfileVC.closeSession" = "Cerrar sesión";
+
+
