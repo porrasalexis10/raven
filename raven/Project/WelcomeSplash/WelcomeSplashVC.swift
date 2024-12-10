@@ -48,7 +48,7 @@ final class WelcomeSplashVC: UIViewController {
     }
     ///Función para continuar con el flujo de la app
     func continueFlowApp() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.stopLoader()
             self.setController()
         }

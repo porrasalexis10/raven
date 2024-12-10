@@ -17,7 +17,7 @@ final class MainTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    func configureCell(item: NewsEntity?) {
+    func configureCell(item: NewsCoreData?) {
         if let news = item {
             itemImage.circularView()
             itemImage.backgroundColor = UIColor.getAssetColor(name: .principalColor)

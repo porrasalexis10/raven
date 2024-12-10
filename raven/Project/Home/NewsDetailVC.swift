@@ -13,11 +13,12 @@ final class NewsDetailVC: BaseViewController {
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var fullNewsBtn: UIButton!
     /// Variable del listado de noticias
-    var currentNews: NewsEntity?
+    var currentNews: NewsCoreData?
     override func viewDidLoad() {
         super.viewDidLoad()
         setStyles()
     }
+    /// Función para dar estilo a la pantalla
     func setStyles() {
         guard let news = currentNews else { return }
         newsImg.customRounded(type: .full)
@@ -31,9 +32,10 @@ final class NewsDetailVC: BaseViewController {
         dateLbl.text = news.date
         fullNewsBtn.underlineStyle()
     }
+    /// Acción para abrir noticia completa
     @IBAction func fullNewsAction(_ sender: Any) {
         guard let news = currentNews else { return }
-        guard let url = URL(string: news.url) else { return }
+        guard let url = URL(string: news.url ?? "") else { return }
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {

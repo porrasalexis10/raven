@@ -15,7 +15,7 @@ extension APIManager {
         MyUserDefaults.name = name
         MyUserDefaults.position = position
         let response = LoginResponse(name: MyUserDefaults.name, position: MyUserDefaults.position, token: MyUserDefaults.token)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.delegate?.responseSucess(response: response, serviceName: serviceName)
         }
     }

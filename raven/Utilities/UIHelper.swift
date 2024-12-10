@@ -30,6 +30,7 @@ public class UIHelper {
     }
     /// Función para remover variables guardadas dentro de la sesión
     func removeSessionData() {
+        CoreDataManager.shared.deleteAllData(entity: "NewsCoreData")
         UserDefaults.standard.removeObject(forKey: MyUserDefaults.token)
         UserDefaults.standard.synchronize()
     }

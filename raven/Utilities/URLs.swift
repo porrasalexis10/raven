@@ -5,6 +5,7 @@
 //  Created by ALEXIS ANTONIO PORRAS LOBATO on 09/12/24.
 //
 struct AppConfig {
+    /// Variable de ambiente
     static var environment: AppEnvironment {
         #if DEBUG
             return .develop

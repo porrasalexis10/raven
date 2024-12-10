@@ -85,11 +85,13 @@ class BaseViewController: UIViewController {
             self.navigationController?.popToRootViewController(animated: true)
         }
     }
+    /// Ocultar teclado cuando se presiona fuera del campo de texto
     func hideKeyboardWhenTappedAround() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
+    /// Ocultar teclado cuando se presiona fuera del campo de texto
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }

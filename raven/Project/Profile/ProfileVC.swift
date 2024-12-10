@@ -17,17 +17,10 @@ final class ProfileVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addButtons()
         setStyles()
         hideKeyboardWhenTappedAround()
     }
-    func addButtons() {
-        let backButton = UIButton(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
-        backButton.setImage(UIImage(systemName: "arrow.left"), for: .normal)
-        backButton.tintColor = UIColor.getAssetColor(name: .principalColor)
-        backButton.addTarget(self, action: #selector(backAction), for: .touchUpInside)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
-    }
+    /// Función para dar estilo a la pantalla
     func setStyles() {
         profileImg.customRounded(type: .full)
         nameLbl.font = UIFont.setCustomFont(name: .text)
@@ -42,9 +35,6 @@ final class ProfileVC: BaseViewController {
         closeSessionBtn.setTitle("ProfileVC.closeSession".localized, for: .normal)
     }
     // MARK: Actions
-    @objc func backAction() {
-        closeView(isModal: true)
-    }
     @IBAction func closeSession(_ sender: Any) {
         UIHelper.shared.removeSessionData()
         UIHelper.shared.setRootController(storyboard: .login)
