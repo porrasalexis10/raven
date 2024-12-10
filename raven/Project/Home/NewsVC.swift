@@ -27,12 +27,12 @@ final class NewsVC: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         refreshControl.addTarget(self, action: #selector(self.refreshTable(_:)), for: .valueChanged)
-        refreshControl.tintColor = .clear
+        refreshControl.tintColor = UIColor.getAssetColor(name: .principalColor)
         tableView.addSubview(refreshControl)
     }
     /// Función para refrescar tabla
     @objc func refreshTable(_ sender: AnyObject) {
-        refreshControl.beginRefreshing()
+        refreshControl.isHidden = false
         fetchNews()
     }
     /// Petición de servicio
