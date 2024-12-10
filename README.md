@@ -48,4 +48,11 @@ El proyecto cuenta con una estructura de directorios. A continuación se ejempli
 > - [x] Implementación de condionales por medio de esquemas para datos hardcodeados en modo debug
 > - [x] Imagen de raven como aplicativo (disculpa por la resolución, las encontre en internet) 
 
-
+> [!IMPORTANT]
+> Imagenes del proyecto
+<picture>
+  <img alt="Noticias" src="https://github.com/user-attachments/assets/ecbb3a9d-0ac6-449d-992a-64b4b61839bb" widht=200 height=600>
+</picture>
+<picture>
+  <img alt="Noticias" src="https://github.com/user-attachments/assets/9fa11ab3-912a-41bb-943b-5bc852e9f011" widht=200 height=600>
+</picture>
