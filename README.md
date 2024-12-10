@@ -24,7 +24,7 @@ Desde línea de comandos coloquese en la ubicación del proyecto clonado y ejecu
 - [x] Optimización de Rendimiento
 - [x] Detalle del Artículo
 - [ ] Pruebas Unitarias
-- [x] Arquitectura
+- [x] Arquitectura (MVC ya que era un proyecto sencillo)
 
 ### Extras
 - [x] Pantalla login para ejemplificar el API_KEY proporcionada del servicio de login ( No existe un servicio, solo teniendo datos escritos pasa a la siguiente pantalla)
