@@ -26,3 +26,9 @@ Desde línea de comandos coloquese en la ubicación del proyecto clonado y ejecu
 - [ ] Pruebas Unitarias
 - [x] Arquitectura
 
+### Extras
+- [x] Pantalla login para ejemplificar el API_KEY proporcionada del servicio de login ( No existe un servicio, solo teniendo datos escritos pasa a la siguiente pantalla)
+- [x] Apartado de perfil para poder cerrar sesión y ejemplificar el uso de eliminado de datos como API_KEY y la información de core data
+- [x] Implementación de gesto "refresh" en pantalla principal para actualizar datos 
+
+
