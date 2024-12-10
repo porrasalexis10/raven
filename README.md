@@ -29,6 +29,11 @@ Desde línea de comandos coloquese en la ubicación del proyecto clonado y ejecu
 ### Extras
 - [x] Pantalla login para ejemplificar el API_KEY proporcionada del servicio de login ( No existe un servicio, solo teniendo datos escritos pasa a la siguiente pantalla)
 - [x] Apartado de perfil para poder cerrar sesión y ejemplificar el uso de eliminado de datos como API_KEY y la información de core data
-- [x] Implementación de gesto "refresh" en pantalla principal para actualizar datos 
+- [x] Implementación de tabView para navegación
+- [x] Implementación de gesto "refresh" en pantalla principal para actualizar datos
+- [x] Implementación de link para abrir la noticia completa en pagina web
+- [x] Implementación de manejo de teclado (aunque no se puede editar datos, son hardcodeados)
+- [x] Implementación de condionales por medio de esquemas para datos hardcodeados en modo debug
+- [x] Imagen de raven como aplicativo (disculpa por la resolución, las encontre en internet) 
 
 
